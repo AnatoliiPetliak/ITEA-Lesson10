@@ -1,0 +1,55 @@
+.cart {
+    width: 20rem;
+    background: rgb(206, 133, 133);
+}
+
+.ticket {
+    background-color: rgb(245, 239, 239);
+    margin: 5px;
+    list-style-type: none;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn1 {
+    background-color: white;
+    border: 2px solid #f44336;
+    color: black;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn1:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.remove-btn {
+    background-color: white;
+    border: 2px solid #f44336;
+    color: black;
+    padding: 4px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #f44336;
+    color: white;
+}
