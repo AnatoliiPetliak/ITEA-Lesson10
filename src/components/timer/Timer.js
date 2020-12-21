@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class Timer extends Component {
   state = {
     isActive: false,
-    currentCount: 10,
+    currentCount: 60,
   };
 
   startTimer = () => {
     if (this.state.isActive) {
       clearInterval(this.currentTimerId);
-      this.setState({ currentCount: 10 });
+      this.setState({ currentCount: 60 });
     }
     this.setState({ isActive: true });
     this.currentTimerId = setInterval(() => {
