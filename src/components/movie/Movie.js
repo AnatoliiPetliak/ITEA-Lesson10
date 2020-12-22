@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Switch, Route, NavLink, Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import SinemaHall from '../cinemaHall/CinemaHall';
-import NotFound from '../notFound/NotFound';
 import './movie.css';
 
 // Click the btn and return to main page...
@@ -29,7 +28,6 @@ const Movie = (props) => {
 						<Switch>
 							<Route path="/session1/" component={SinemaHall} />
 							<Route path="/session2/" component={SinemaHall} />
-							<Route component={NotFound} />
 						</Switch>
 					</figcaption>
 				</figure>

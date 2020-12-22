@@ -17,7 +17,6 @@ class CinemaHall extends Component {
 
 	componentDidMount = () => {
 		const preloadedData = this.getDataFromStorage('key');
-
 		if (preloadedData) {
 			this.setState({ seat: preloadedData });
 		} else {
@@ -25,8 +24,6 @@ class CinemaHall extends Component {
 			this.setState({ seat: converted_seat });
 		}
 	};
-
-	componentWillUnmount = () => {};
 
 	getDataFromStorage = (key) => {
 		key = this.props.location.pathname;

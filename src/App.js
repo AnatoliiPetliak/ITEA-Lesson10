@@ -16,10 +16,8 @@ class App extends Component {
 			query: '',
 			error: null,
 			errorInfo: null,
-
 			activePage: 1,
 			moviesPerPage: 5,
-
 			movieSessions: [
 				{
 					movieId: 1,
@@ -58,7 +56,6 @@ class App extends Component {
 
 	getPopularMovies() {
 		const url = `https://api.themoviedb.org/3/movie/popular?api_key=cfe422613b250f702980a3bbf9e90716`;
-
 		fetch(url).then((response) => response.json()).catch((error) => console.error('Error:', error)).then((data) => {
 			this.setState({
 				movies: data.results
